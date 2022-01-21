@@ -1,2 +1,9 @@
 /*body{font-family: 'Raleway', sans-serif;*/
 /*font-family: 'Roboto', sans-serif;}*/
+:root {
+  --accent-color: 2196f3;
+}
+.page-header .link:hover,
+.page-header .link:focus {
+  color: var(--accent-color);
+}
