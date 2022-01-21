@@ -1,9 +1,31 @@
-/*body{font-family: 'Raleway', sans-serif;*/
-/*font-family: 'Roboto', sans-serif;}*/
+body {
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
 :root {
+  --main-color: 212121;
   --accent-color: 2196f3;
+  --title-color: FFFFFF;
+}
+.logo-color {
+  color: var(--accent-color);
+}
+.logo {
+}
+.page-header > {
+  align-items: center;
 }
 .page-header .link:hover,
 .page-header .link:focus {
   color: var(--accent-color);
+}
+a {
+  text-decoration: none;
+}
+address {
+  text-decoration: none;
+}
+.invisible {
+  display: none;
 }
