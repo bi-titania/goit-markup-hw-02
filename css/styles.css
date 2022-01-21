@@ -1,17 +1,23 @@
-body {
-  font-family: 'Raleway', sans-serif;
-  font-family: 'Roboto', sans-serif;
+:root {
+  --main-color: #212121;
+  --accent-color: #2196f3;
+  --title-color: #ffffff;
+  --background: #2f303a;
 }
 
-:root {
-  --main-color: 212121;
-  --accent-color: 2196f3;
-  --title-color: FFFFFF;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 .logo-color {
   color: var(--accent-color);
 }
 .logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 .page-header > {
   align-items: center;
@@ -19,6 +25,8 @@ body {
 .page-header .link:hover,
 .page-header .link:focus {
   color: var(--accent-color);
+}
+nav {
 }
 a {
   text-decoration: none;
@@ -28,4 +36,43 @@ address {
 }
 .invisible {
   display: none;
+}
+.hero {
+  background-color: var(--background);
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 200px;
+  color: var(--title-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.button {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
