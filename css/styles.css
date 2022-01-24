@@ -3,37 +3,70 @@
   --accent-color: #2196f3;
   --title-color: #ffffff;
   --background: #2f303a;
+  --team-color: #f5f4fa;
+  --text-color: #757575;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  text-align: center;
 }
-.logo-color {
-  color: var(--accent-color);
+/* ----- Шапка страницы ----- */
+header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
-.logo {
+.header {
+  align-items: center;
+}
+.header > a {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  color: var(--main-color);
 }
-.page-header > {
-  align-items: center;
-}
-.page-header .link:hover,
-.page-header .link:focus {
+.logo-color {
   color: var(--accent-color);
 }
-nav {
+.link {
+  color: var(--main-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.header {
+  display: flex;
+}
+.header > ul {
+  display: flex;
+}
+.nav-list {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+.link-contact {
+  color: var(--text-color);
+}
+.link-contact:hover,
+.link-contact:focus {
+  color: var(--accent-color);
 }
 a {
   text-decoration: none;
+  color: var(--title-color);
 }
-address {
-  text-decoration: none;
-}
+
 .invisible {
   display: none;
 }
@@ -45,16 +78,11 @@ address {
   left: 0px;
   top: 80px;
 }
-.title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+.hero > h1 {
   width: 696px;
   height: 120px;
-  left: 452px;
-  top: 200px;
+  margin-left: 452px;
+  margin-top: 200px;
   color: var(--title-color);
   font-family: Roboto;
   font-style: normal;
@@ -65,14 +93,215 @@ address {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.button {
-  position: absolute;
+.hero > button {
+  box-sizing: content-box;
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 430px;
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: var(--accent-color);
+  color: var(--title-color);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.hero > button:hover,
+.hero > button:focus {
+  background-color: var(--title-color);
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.skills {
+  position: absolute;
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
+}
+.skills-list {
+  display: flex;
+}
+.skills h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  width: 270px;
+  height: 16px;
+}
+.skills p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+
+  width: 270px;
+  height: 75px;
+}
+.work {
+  position: absolute;
+  width: 1170px;
+  height: 386px;
+  left: 215px;
+  top: 969px;
+}
+.work-list {
+  display: flex;
+}
+.work h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team {
+  position: absolute;
+
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+  background-color: var(--team-color);
+}
+.team > h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  display: flex;
+  padding-left: 215px;
+}
+.team-card > h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.team-card > p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.team-card {
+  background-color: var(--title-color);
+  width: 270px;
+  height: 368px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.team-list {
+}
+
+/*  --- Подвал страницы ---  */
+
+footer {
+  position: absolute;
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  background-color: var(--background);
+  color: var(--title-color);
+  text-align: left;
+  padding-top: 60px;
+}
+footer > a {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  padding-left: 215px;
+}
+address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.1;
+  letter-spacing: 0.03em;
+  padding-left: 175px;
+}
+.link-address:hover {
+  color: var(--accent-color);
+}
+/* portfolio*/
+.gallery-projects {
+  position: absolute;
+  width: 1170px;
+
+  left: 215px;
+  top: 158px;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.projects > li {
+  flex-direction: column;
+  justify-content: center;
+}
+.pr-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: var(--main-color);
+}
+.pr-desc {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--text-color);
 }
