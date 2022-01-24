@@ -195,10 +195,12 @@ a {
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-top: 50px;
 }
 .team-list {
   display: flex;
   padding-left: 215px;
+  padding-top: 30px;
 }
 .team-card > h3 {
   font-family: Roboto;
