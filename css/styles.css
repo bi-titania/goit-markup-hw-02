@@ -87,7 +87,6 @@ main {
   justify-content: center;
   align-items: center;
   height: 600px;
-  margin-left: -10px;
 }
 .hero > h1 {
   width: 696px;
@@ -180,7 +179,6 @@ main {
 }
 .work-list > li {
   margin-right: 30px;
-
   justify-content: center;
 }
 .work h2 {
@@ -268,6 +266,7 @@ main {
   line-height: 31px;
   letter-spacing: 0.03em;
   padding-right: 1020px;
+  margin-top: 10px;
 }
 address {
   font-style: normal;
