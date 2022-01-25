@@ -19,10 +19,11 @@ header {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-}
-.header {
+  height: 80px;
+  margin-top: 20px;
   align-items: center;
 }
+
 .header > a {
   font-family: Raleway;
   font-style: normal;
@@ -31,12 +32,16 @@ header {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-left: 215px;
+  margin-right: 50px;
+  margin-top: 5px;
 }
 .logo-color {
   color: var(--accent-color);
 }
 .link {
   color: var(--main-color);
+  margin: 20px;
 }
 .link:hover,
 .link:focus {
@@ -48,6 +53,7 @@ header {
 }
 .header > ul {
   display: flex;
+  padding-left: 300px;
 }
 .nav-list {
   display: flex;
@@ -57,6 +63,7 @@ ul {
 }
 .link-contact {
   color: var(--text-color);
+  margin: 20px;
 }
 .link-contact:hover,
 .link-contact:focus {
