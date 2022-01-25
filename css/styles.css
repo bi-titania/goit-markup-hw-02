@@ -10,6 +10,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 /* ----- Шапка страницы ----- */
@@ -35,7 +39,6 @@ header {
   color: var(--main-color);
   padding-left: 215px;
   margin-right: 50px;
-  margin-top: 5px;
 }
 .logo-color {
   color: var(--accent-color);
@@ -50,6 +53,10 @@ header {
 }
 .header {
   display: flex;
+  align-items: center;
+
+  width: 1600px;
+  margin: 0 auto;
 }
 .header > ul {
   display: flex;
@@ -73,20 +80,21 @@ a {
   text-decoration: none;
   color: var(--title-color);
 }
+main {
+}
 .hero {
   background-color: var(--background);
-  position: absolute;
-  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 600px;
-  left: 0px;
-  top: 80px;
-  text-align: center;
+  margin-left: -10px;
 }
 .hero > h1 {
   width: 696px;
   height: 120px;
-  margin-left: 452px;
-  margin-top: 200px;
+
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
@@ -114,7 +122,6 @@ a {
   line-height: 30px;
   text-align: center;
   letter-spacing: 0.06em;
-  margin: 0px;
 }
 .hero > button:hover,
 .hero > button:focus {
@@ -191,9 +198,12 @@ a {
   letter-spacing: 0.03em;
 }
 .team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   width: 1600px;
-  height: 648px;
+  height: 650px;
   left: 0px;
   top: 1449px;
   background-color: var(--team-color);
@@ -211,7 +221,7 @@ a {
 }
 .team-list {
   display: flex;
-  padding-left: 215px;
+
   padding-top: 10px;
 }
 .team-card > h3 {
@@ -244,18 +254,20 @@ a {
 
 /*  --- Подвал страницы ---  */
 
-footer {
+.footer {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   width: 1600px;
-  height: 252px;
-  left: 0px;
+  height: 250px;
   top: 2097px;
+
   background-color: var(--background);
   color: var(--title-color);
   text-align: left;
   padding-top: 60px;
 }
-footer > a {
+.footer > a {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -297,10 +309,10 @@ address {
   display: none;
 }
 .gallery-projects {
-  position: absolute;
+  align-items: center;
+  justify-content: center;
   width: 1170px;
-  left: 215px;
-  top: 158px;
+  margin: 0 auto;
 }
 .button-list {
   display: flex;
@@ -336,10 +348,7 @@ address {
 .projects {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 .projects > li {
   flex-direction: column;
