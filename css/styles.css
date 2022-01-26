@@ -43,7 +43,9 @@ body {
 .logo {
   color: var(--accent-color);
 }
-/* --- Меню навигации --- */
+
+/* ---------- Меню навигации сайта ----------- */
+
 .nav-list {
   display: flex;
 }
@@ -301,17 +303,17 @@ address {
   display: none;
 }
 
-/* ---------- Меню навигации ---------- */
+/* --- Меню навигации --- */
 
-.button-list {
+.button-menu {
   display: flex;
   justify-content: center;
 }
-.button-list li {
+.button-menu li {
   margin-right: 10px;
   margin-bottom: 30px;
 }
-.button-list button {
+.button {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -327,8 +329,8 @@ address {
   border-radius: 4px;
   border: var(--team-color);
 }
-.button-list button:hover,
-.button-list button:focus {
+.button:hover,
+.button:focus {
   background-color: var(--accent-color);
   color: var(--title-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
