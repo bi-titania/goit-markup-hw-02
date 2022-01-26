@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0 auto;
   color: var(--main-color);
@@ -43,6 +43,7 @@ body {
 .logo {
   color: var(--accent-color);
 }
+/* --- Меню навигации --- */
 .nav-list {
   display: flex;
 }
@@ -52,6 +53,9 @@ body {
 }
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--accent-color);
+}
+.current {
   color: var(--accent-color);
 }
 .header > ul {
@@ -74,7 +78,7 @@ a {
   color: var(--title-color);
 }
 
-/* ---------- Заголовок ----------*/
+/* ---------- Заголовок ---------- */
 
 .hero {
   background-color: var(--background);
@@ -84,7 +88,7 @@ a {
   align-items: center;
   height: 600px;
 }
-.hero > h1 {
+.hero h1 {
   width: 696px;
   height: 120px;
 
@@ -96,7 +100,7 @@ a {
   text-transform: uppercase;
   color: var(--title-color);
 }
-.hero > button {
+.hero button {
   box-sizing: content-box;
   width: 200px;
   height: 50px;
@@ -107,14 +111,15 @@ a {
   border: var(--accent-color);
   color: var(--title-color);
 
+  font-family: 'Roboto';
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
   letter-spacing: 0.06em;
 }
-.hero > button:hover,
-.hero > button:focus {
+.hero button:hover,
+.hero button:focus {
   background-color: var(--title-color);
   color: var(--accent-color);
   font-style: normal;
@@ -125,7 +130,7 @@ a {
   letter-spacing: 0.06em;
 }
 
-/* ---------- Навыки ----------*/
+/* ---------- Навыки ---------- */
 
 .skills {
   margin-top: 95px;
@@ -160,7 +165,7 @@ a {
   margin-right: 30px;
 }
 
-/* ---------- Виды деятельности ----------*/
+/* ---------- Виды деятельности ---------- */
 
 .work {
   display: flex;
@@ -179,12 +184,12 @@ a {
   display: flex;
   justify-content: center;
 }
-.work-list > li {
+.work-list li {
   margin-right: 30px;
   justify-content: center;
 }
 
-/* ---------- Команда ----------*/
+/* ---------- Команда ---------- */
 
 .team {
   display: flex;
@@ -196,7 +201,7 @@ a {
   margin-top: 95px;
   background-color: var(--team-color);
 }
-.team > h2 {
+.team h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -216,14 +221,14 @@ a {
   background-color: var(--title-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.team-card > h3 {
+.team-card h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-card > p {
+.team-card p {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -253,6 +258,7 @@ a {
   padding-right: 1020px;
   margin-top: 10px;
 }
+/* -- контакты -- */
 address {
   font-style: normal;
   font-weight: normal;
@@ -265,7 +271,7 @@ address {
   color: var(--accent-color);
 }
 .address-contact {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
 }
 .address-contact:hover,
 .address-contact:focus {
@@ -291,7 +297,7 @@ address {
   width: 1170px;
   margin: 75px auto 0 auto;
 }
-.gallery-projects > h1 {
+.gallery-projects h1 {
   display: none;
 }
 
@@ -301,11 +307,11 @@ address {
   display: flex;
   justify-content: center;
 }
-.button-list > li {
+.button-list li {
   margin-right: 10px;
   margin-bottom: 30px;
 }
-.button-list > li > button {
+.button-list button {
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -321,8 +327,8 @@ address {
   border-radius: 4px;
   border: var(--team-color);
 }
-.button-list > li > button:hover,
-.button-list > li > button:focus {
+.button-list button:hover,
+.button-list button:focus {
   background-color: var(--accent-color);
   color: var(--title-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -335,7 +341,7 @@ address {
   flex-wrap: wrap;
   justify-content: center;
 }
-.projects > li {
+.projects li {
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
@@ -346,8 +352,8 @@ address {
   border-width: 1px;
   border-color: #eeeeee;
 }
-.projects > li:hover,
-.projects > li:focus {
+.projects li:hover,
+.projects li:focus {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .pr-title {
