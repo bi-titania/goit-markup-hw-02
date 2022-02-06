@@ -30,7 +30,7 @@ body {
   letter-spacing: 0.02em;
   height: 80px;
 }
-.header > a {
+.header .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -40,7 +40,7 @@ body {
   color: var(--main-color);
   margin-right: 50px;
 }
-.logo {
+.logo-item {
   color: var(--accent-color);
 }
 
@@ -250,7 +250,7 @@ a {
   background-color: var(--background);
   color: var(--title-color);
 }
-.footer > a {
+.footer .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
